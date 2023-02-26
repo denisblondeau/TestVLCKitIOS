@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'TestVLCKitIOS' do
+    platform :ios, '16.2'
+    pod 'MobileVLCKit', '~>3.3.0'
+end
+

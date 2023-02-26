@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let player = VLCPlayer(url: "rtsp://username:password@someFeedWebsite.com/liveFeed")
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            player
+                .frame(height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            
+            HStack {
+                
+                Button("Play") {
+                    player.play()
+                }
+                Button("Stop") {
+                    player.stop()
+                }
+            }.padding()
         }
-        .padding()
     }
 }
 

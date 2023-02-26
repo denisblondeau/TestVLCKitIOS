@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		9268A2F529ABF9F0005F6B5C /* TestVLCKitIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268A2F429ABF9F0005F6B5C /* TestVLCKitIOSApp.swift */; };
-		9268A2F729ABF9F0005F6B5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268A2F629ABF9F0005F6B5C /* ContentView.swift */; };
 		9268A2F929ABF9F1005F6B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9268A2F829ABF9F1005F6B5C /* Assets.xcassets */; };
 		9268A2FC29ABF9F1005F6B5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9268A2FB29ABF9F1005F6B5C /* Preview Assets.xcassets */; };
+		9268A30329ABFA60005F6B5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268A30229ABFA60005F6B5C /* ContentView.swift */; };
+		9268A30529ABFA6C005F6B5C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 9268A30429ABFA6C005F6B5C /* Readme.md */; };
+		9268A30729ABFA72005F6B5C /* VLCPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268A30629ABFA72005F6B5C /* VLCPlayer.swift */; };
+		BD3FDDAB7045DD8A369C74E4 /* libPods-TestVLCKitIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60392AF4C12195A42FFAE618 /* libPods-TestVLCKitIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CEB1EF2F2C68DCFB0FFAB7E /* Pods-TestVLCKitIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVLCKitIOS.release.xcconfig"; path = "Target Support Files/Pods-TestVLCKitIOS/Pods-TestVLCKitIOS.release.xcconfig"; sourceTree = "<group>"; };
+		60392AF4C12195A42FFAE618 /* libPods-TestVLCKitIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestVLCKitIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9268A2F129ABF9F0005F6B5C /* TestVLCKitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVLCKitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9268A2F429ABF9F0005F6B5C /* TestVLCKitIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVLCKitIOSApp.swift; sourceTree = "<group>"; };
-		9268A2F629ABF9F0005F6B5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9268A2F829ABF9F1005F6B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9268A2FB29ABF9F1005F6B5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9268A30229ABFA60005F6B5C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9268A30429ABFA6C005F6B5C /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		9268A30629ABFA72005F6B5C /* VLCPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLCPlayer.swift; sourceTree = "<group>"; };
+		F0F786A2286677E77BCFBA7D /* Pods-TestVLCKitIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVLCKitIOS.debug.xcconfig"; path = "Target Support Files/Pods-TestVLCKitIOS/Pods-TestVLCKitIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +34,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3FDDAB7045DD8A369C74E4 /* libPods-TestVLCKitIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DCE54319190A50947A66303 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0F786A2286677E77BCFBA7D /* Pods-TestVLCKitIOS.debug.xcconfig */,
+				5CEB1EF2F2C68DCFB0FFAB7E /* Pods-TestVLCKitIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DF4AAA71A34385E35BEB050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60392AF4C12195A42FFAE618 /* libPods-TestVLCKitIOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9268A2E829ABF9F0005F6B5C = {
 			isa = PBXGroup;
 			children = (
+				9268A30429ABFA6C005F6B5C /* Readme.md */,
 				9268A2F329ABF9F0005F6B5C /* TestVLCKitIOS */,
 				9268A2F229ABF9F0005F6B5C /* Products */,
+				1DCE54319190A50947A66303 /* Pods */,
+				6DF4AAA71A34385E35BEB050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				9268A2F429ABF9F0005F6B5C /* TestVLCKitIOSApp.swift */,
-				9268A2F629ABF9F0005F6B5C /* ContentView.swift */,
+				9268A30229ABFA60005F6B5C /* ContentView.swift */,
+				9268A30629ABFA72005F6B5C /* VLCPlayer.swift */,
 				9268A2F829ABF9F1005F6B5C /* Assets.xcassets */,
 				9268A2FA29ABF9F1005F6B5C /* Preview Content */,
 			);
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9268A2FF29ABF9F1005F6B5C /* Build configuration list for PBXNativeTarget "TestVLCKitIOS" */;
 			buildPhases = (
+				09608F24AB97AB78293F9806 /* [CP] Check Pods Manifest.lock */,
 				9268A2ED29ABF9F0005F6B5C /* Sources */,
 				9268A2EE29ABF9F0005F6B5C /* Frameworks */,
 				9268A2EF29ABF9F0005F6B5C /* Resources */,
+				5898E93EB2B0340340D3E0A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +159,61 @@
 			files = (
 				9268A2FC29ABF9F1005F6B5C /* Preview Assets.xcassets in Resources */,
 				9268A2F929ABF9F1005F6B5C /* Assets.xcassets in Resources */,
+				9268A30529ABFA6C005F6B5C /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09608F24AB97AB78293F9806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVLCKitIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5898E93EB2B0340340D3E0A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVLCKitIOS/Pods-TestVLCKitIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVLCKitIOS/Pods-TestVLCKitIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestVLCKitIOS/Pods-TestVLCKitIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9268A2ED29ABF9F0005F6B5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9268A2F729ABF9F0005F6B5C /* ContentView.swift in Sources */,
+				9268A30729ABFA72005F6B5C /* VLCPlayer.swift in Sources */,
+				9268A30329ABFA60005F6B5C /* ContentView.swift in Sources */,
 				9268A2F529ABF9F0005F6B5C /* TestVLCKitIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +337,7 @@
 		};
 		9268A30029ABF9F1005F6B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F786A2286677E77BCFBA7D /* Pods-TestVLCKitIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +367,7 @@
 		};
 		9268A30129ABF9F1005F6B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEB1EF2F2C68DCFB0FFAB7E /* Pods-TestVLCKitIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
